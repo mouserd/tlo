@@ -174,7 +174,19 @@ a:hover {
 }
 
 #logo {
-  float: right;
+  position: relative;
+  background: url('/assets/logo.png') right no-repeat;
+  right: 0;
+  height: 200px;
+}
+
+@media all and (max-width: 660px) and (min-width: 0px) {
+  #logo {
+    position: relative;
+    right: 0;
+    background: url('/assets/logo-small.png') right no-repeat;
+    height: 100px;
+  }
 }
 
 .btn-transparent {
@@ -234,7 +246,7 @@ a:hover {
 #intro {
   position: absolute;
   top: 25%;
-  padding: 40px;
+  padding: 30px;
 //  background-color: rgba(230, 230, 230, 0.8);
   background-color: #ECF0F1;
   background: url("/assets/pattern-turquoise.jpg") fixed;
@@ -492,7 +504,7 @@ a:hover {
 
 /* START: CONTACT SECTION*/
 #contact {
-  background: url("/assets/services.jpg") no-repeat;
+  background: url("/assets/contact.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
