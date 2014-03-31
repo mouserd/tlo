@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #ECF0F1;
-  background: url('/assets/pattern-lightgrey.png') fixed;
+  background: asset-url('pattern-lightgrey.png', image) fixed;
 }
 
 section {
@@ -175,7 +175,7 @@ a:hover {
 
 #logo {
   position: relative;
-  background: url('/assets/logo.png') right no-repeat;
+  background: asset-url('logo.png', image) right no-repeat;
   right: 0;
   height: 200px;
 }
@@ -184,7 +184,7 @@ a:hover {
   #logo {
     position: relative;
     right: 0;
-    background: url('/assets/logo-small.png') right no-repeat;
+    background: asset-url('logo-small.png', image) right no-repeat;
     height: 100px;
   }
 }
@@ -232,7 +232,7 @@ a:hover {
 #header {
   overflow: hidden;
   height: auto;
-//  background: url('/assets/home.jpg') fixed no-repeat;
+//  background: asset-url('home.jpg', image) fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -249,7 +249,7 @@ a:hover {
   padding: 30px;
 //  background-color: rgba(230, 230, 230, 0.8);
   background-color: rgba(darken($primary-color, 10%), 0.55);
-  background: url("/assets/pattern-turquoise.jpg") fixed;
+  background: asset-url("pattern-turquoise.jpg", image) fixed;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -309,7 +309,7 @@ a:hover {
 /* START: SERVICES SECTION*/
 #services {
   height: auto;
-  background: url('/assets/services.jpg') no-repeat;
+  background: asset-url('services.jpg', image) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -429,7 +429,7 @@ a:hover {
 /* START: CLIENTS SECTION*/
 #clients {
   height: auto;
-  background: url('/assets/clients.jpg') no-repeat;
+  background: asset-url('clients.jpg', image) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -504,7 +504,7 @@ a:hover {
 
 /* START: CONTACT SECTION*/
 #contact {
-  background: url("/assets/contact.jpg") no-repeat;
+  background: asset-url("contact.jpg", image) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -528,7 +528,7 @@ a:hover {
   position: relative;
   border: 1px solid #ddd;
   background-color: #fff;
-  /*background: url('../images/stripes.png');*/
+  /*background: asset-url('stripes.png', image);*/
 }
 
 #contact-details {
