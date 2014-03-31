@@ -2,8 +2,8 @@
 @import 'ionicons';
 @import "font-awesome";
 
-$primary-color: darken(rgb(102, 238, 216), 30%); // pink
-$secondary-color: rgb(255, 127, 118); // turquoise
+$primary-color: darken(rgb(102, 238, 216), 30%); // turquoise
+$secondary-color: rgb(255, 127, 118); // pink
 
 /* START: GLOBAL STYLES */
 html, body, #page {
@@ -239,7 +239,7 @@ a:hover {
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
-  border-bottom: 20px solid;
+//  border-bottom: 20px solid;
   border-bottom-color: rgba(180, 180, 180, 0.75);
 }
 
@@ -248,12 +248,12 @@ a:hover {
   top: 25%;
   padding: 30px;
 //  background-color: rgba(230, 230, 230, 0.8);
-  background-color: #ECF0F1;
+  background-color: rgba(darken($primary-color, 10%), 0.55);
   background: url("/assets/pattern-turquoise.jpg") fixed;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid rgba($primary-color, 1);
+  border: 2px solid rgba(lighten($primary-color, 10%), 1);
 }
 
 #intro .ticker {
